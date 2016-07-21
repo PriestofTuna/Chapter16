@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="7.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ScrollBar fx:id="visibility" layoutX="50.0" layoutY="157.0" max="1.0" min="0.01" onMouseReleased="#vActionReleased" rotate="180.0" unitIncrement="0.01" value="1.0" />
+                  <ScrollBar fx:id="blueColor" layoutX="50.0" layoutY="143.0" max="255.0" onMouseReleased="#bActionReleased" />
+                  <ScrollBar fx:id="greenColor" layoutX="50.0" layoutY="129.0" max="255.0" onMouseReleased="#gActionReleased" />
+                  <ScrollBar fx:id="redColor" layoutX="50.0" layoutY="115.0" max="255.0" onMouseReleased="#rActionReleased" />
+                  <Label fx:id="out" layoutX="50.0" layoutY="83.0" prefHeight="17.0" prefWidth="100.0" text="Label Constaints" />
+                  <Label fx:id="out1" layoutX="12.0" layoutY="114.0" prefHeight="17.0" prefWidth="38.0" text="red" />
+                  <Label fx:id="out11" layoutX="12.0" layoutY="128.0" prefHeight="17.0" prefWidth="38.0" text="green" />
+                  <Label fx:id="out12" layoutX="12.0" layoutY="142.0" prefHeight="17.0" prefWidth="38.0" text="blue" />
+                  <Label fx:id="out121" layoutY="156.0" prefHeight="17.0" prefWidth="50.0" text="Opacity" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+         <GridPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
